@@ -50,17 +50,17 @@ I think it means that script should extend names from abbreviations. My implemen
 "for loop" for it. At each cycle (while the end of names(extractedData) is not reached) my
 script looks in current name from names of extractedData for some abbreviations and 
 replaces them with extended versions. There is list of them:
-1. t            time
-2. f            frequency
-3. Acc          Accelerometer
-4. Gyro         Gyroscope
-5. Mag          Magnitude
-6. -mean()      Mean
-7. -std()       StandardDeviation
-8. -X           AlongX
-9. -Y           AlongY
-10.-Z           AlongZ
-11.BodyBody     Body
+* t            time
+* f            frequency
+* Acc          Accelerometer
+* Gyro         Gyroscope
+* Mag          Magnitude
+* -mean()      Mean
+* -std()       StandardDeviation
+* -X           AlongX
+* -Y           AlongY
+* -Z           AlongZ
+* BodyBody     Body
 
 Note: I used camelCase style for extended column names because it makes them more readable.
 I know, that it violates some rules from lectures but I suppose that in this particular case
