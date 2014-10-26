@@ -12,8 +12,12 @@ be "UCI HAR Dataset" folder with files.
 #Reading and merging data
 When everything is prepared, the script reads data from data sets using concatenated path
 to your working directory and place of a data set in "UCI HAR Dataset" folder. Then:
-1. It binds together parts of train and test data sets;
-2. It merges train and test data sets together and saves result in mergedData variable. 
+<ol>
+  <li>It binds together parts of train and test data sets;</li>
+  <li>It merges train and test data sets together and saves result in mergedData variable.</li>
+</ol>
+
+
 
 Note: If you don't have "UCI HAR Dataset" folder containing initial data files in your 
 working directory it will cause an error.
@@ -50,17 +54,17 @@ I think it means that script should extend names from abbreviations. My implemen
 "for loop" for it. At each cycle (while the end of names(extractedData) is not reached) my
 script looks in current name from names of extractedData for some abbreviations and 
 replaces them with extended versions. There is list of them:
-* t            time
-* f            frequency
-* Acc          Accelerometer
-* Gyro         Gyroscope
-* Mag          Magnitude
-* -mean()      Mean
-* -std()       StandardDeviation
-* -X           AlongX
-* -Y           AlongY
-* -Z           AlongZ
-* BodyBody     Body
+* "t" --- "time"
+* "f" --- "frequency"
+* "Acc" --- "Accelerometer"
+* "Gyro" --- "Gyroscope"
+* "Mag" --- "Magnitude"
+* "-mean()" --- "Mean"
+* "-std()" --- "StandardDeviation"
+* "-X" --- "AlongX"
+* "-Y" --- "AlongY"
+* "-Z" --- "AlongZ"
+* "BodyBody" --- "Body"
 
 Note: I used camelCase style for extended column names because it makes them more readable.
 I know, that it violates some rules from lectures but I suppose that in this particular case
